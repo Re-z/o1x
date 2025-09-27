@@ -1,8 +1,8 @@
 <template>
-  <AppMain />
+    <AppMain />
 </template>
 
 <script setup lang="ts">
-import AppMain from './views/AppMain.vue'
+    import AppMain from './views/AppMain.vue'
 </script>
 <style scoped></style>
