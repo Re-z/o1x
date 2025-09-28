@@ -1,3 +1,5 @@
+// TODO: remove or disable any type
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
@@ -8,10 +10,10 @@ import { createI18n } from 'vue-i18n'
 import { translations } from './locales'
 
 const i18n = createI18n({
-    legacy: false, // сучасний Composition API синтаксис
-    globalInjection: true, // дозволяє використовувати $t у шаблонах без імпорту
-    locale: 'ua', // мова за замовчуванням
-    fallbackLocale: 'ua', // fallback, якщо ключа немає
+    legacy: false,
+    globalInjection: true,
+    fallbackLocale: 'ua',
+    /* eslint-disable @typescript-eslint/no-explicit-any */
     messages: translations as any,
 })
 
