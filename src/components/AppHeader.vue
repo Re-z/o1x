@@ -8,22 +8,45 @@
         </div>
 
         <div class="flex items-center">
+            <div class="mr-8 flex">
+                <AppButton
+                    :class="{ 'bg-yellow-500': locale === 'ua' }"
+                    :type="BUTTON_TYPES.SECONDARY"
+                    text="UA"
+                    @click="switchLang('ua')"
+                />
+                <span class="px-2 text-white">|</span>
+                <AppButton
+                    :class="{ 'bg-yellow-500': locale === 'en' }"
+                    :type="BUTTON_TYPES.SECONDARY"
+                    text="EN"
+                    @click="switchLang('en')"
+                />
+            </div>
             <AppButton
                 class="mr-8"
                 :type="BUTTON_TYPES.SECONDARY"
-                :text="'My cabinet'"
+                :text="$t('myProfile')"
             />
             <AppButton
                 :type="BUTTON_TYPES.PRIMARY"
-                :text="'Create Listing'"
+                :text="$t('createListing')"
             />
         </div>
     </header>
 </template>
 
 <script setup lang="ts">
+    // imports
     import { BUTTON_TYPES } from './generic/AppButton/AppButton'
     import AppButton from './generic/AppButton/AppButton.vue'
+    import { useI18n } from 'vue-i18n'
+
+    // lang switch
+    const { locale } = useI18n()
+    function switchLang(lang: string) {
+        locale.value = lang
+    }
 </script>
 
 <style lang="scss" scoped>
