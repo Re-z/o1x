@@ -1,5 +1,4 @@
 // TODO: remove or disable any type
-
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
