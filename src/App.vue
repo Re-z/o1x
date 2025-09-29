@@ -1,8 +1,6 @@
 <template>
-    <AppMain />
+    <router-view />
 </template>
 
-<script setup lang="ts">
-    import AppMain from './views/AppMain.vue'
-</script>
+<script setup lang="ts"></script>
 <style scoped></style>

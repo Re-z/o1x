@@ -12,7 +12,6 @@ const i18n = createI18n({
     legacy: false,
     globalInjection: true,
     fallbackLocale: 'ua',
-    /* eslint-disable @typescript-eslint/no-explicit-any */
     messages: translations as any,
 })
 
