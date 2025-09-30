@@ -1,13 +1,16 @@
 <template>
     <!-- TODO: replace styles with tailwind -->
     <header class="flex items-center justify-between bg-gray-500 px-10 py-5">
-        <div
-            class="logo"
-            @click="navigateToPage(ROUTES.MAIN_VIEW)"
-        >
-            <span class="first">O</span>
-            <span class="second">1</span>
-            <span class="third">x</span>
+        <div class="flex items-center">
+            <div
+                class="logo mr-5"
+                @click="navigateToPage(ROUTES.MAIN_VIEW)"
+            >
+                <span class="first">O</span>
+                <span class="second">1</span>
+                <span class="third">x</span>
+            </div>
+            <span class="text-white">{{ $t('hello') }}, {{ user.userData.name }} 👋</span>
         </div>
 
         <div class="flex items-center">
@@ -54,6 +57,7 @@
     import AppButton from './generic/AppButton/AppButton.vue'
     import { useI18n } from 'vue-i18n'
     import { useRouter, useRoute } from 'vue-router'
+    import { useUserStore } from '@/stores/userData'
     // router
     const router = useRouter()
     const route = useRoute()
@@ -68,7 +72,8 @@
     function switchLang(lang: string) {
         locale.value = lang
     }
-    // navigation
+    // user data
+    const user = useUserStore()
 </script>
 
 <style lang="scss" scoped>
