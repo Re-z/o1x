@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header.vue tests > renders correctly (snapshot) 1`] = `
+"<!-- TODO: replace styles with tailwind -->
+<header data-v-0c9847cd="" class="flex items-center justify-between bg-gray-500 px-10 py-5">
+  <div data-v-0c9847cd="" class="flex items-center">
+    <div data-v-0c9847cd="" class="logo mr-5"><span data-v-0c9847cd="" class="first">O</span><span data-v-0c9847cd="" class="second">1</span><span data-v-0c9847cd="" class="third">x</span></div><span data-v-0c9847cd="" class="text-white">Hello, User name from store 👋</span>
+  </div>
+  <div data-v-0c9847cd="" class="flex items-center">
+    <div data-v-0c9847cd="" class="mr-8 flex">
+      <app-button-stub data-v-0c9847cd="" text="List page exmpl" type="secondary" class="mr-8"></app-button-stub>
+      <app-button-stub data-v-0c9847cd="" text="UA" type="secondary" class=""></app-button-stub><span data-v-0c9847cd="" class="px-2 text-white">|</span>
+      <app-button-stub data-v-0c9847cd="" text="EN" type="secondary" class="bg-yellow-500"></app-button-stub>
+    </div>
+    <app-button-stub data-v-0c9847cd="" text="My Profile" type="secondary" class="mr-8"></app-button-stub>
+    <app-button-stub data-v-0c9847cd="" text="Create Listing" type="primary"></app-button-stub>
+  </div>
+</header>"
+`;

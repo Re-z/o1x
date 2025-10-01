@@ -24,17 +24,17 @@
                 />
 
                 <AppButton
-                    :class="{ 'bg-yellow-500': locale === 'ua' }"
+                    :class="{ 'bg-yellow-500': locale === LOCALES.UA }"
                     :type="BUTTON_TYPES.SECONDARY"
                     text="UA"
-                    @click="switchLang('ua')"
+                    @click="switchLang(LOCALES.UA)"
                 />
                 <span class="px-2 text-white">|</span>
                 <AppButton
-                    :class="{ 'bg-yellow-500': locale === 'en' }"
+                    :class="{ 'bg-yellow-500': locale === LOCALES.EN }"
                     :type="BUTTON_TYPES.SECONDARY"
                     text="EN"
-                    @click="switchLang('en')"
+                    @click="switchLang(LOCALES.EN)"
                 />
             </div>
             <AppButton
@@ -53,11 +53,13 @@
 <script setup lang="ts">
     // imports
     import { ROUTES } from '@/router/routesMap'
-    import { BUTTON_TYPES } from './generic/AppButton/AppButton'
-    import AppButton from './generic/AppButton/AppButton.vue'
+    import { BUTTON_TYPES } from '@/components/generic/AppButton/AppButton'
+    import AppButton from '@/components/generic/AppButton/AppButton.vue'
     import { useI18n } from 'vue-i18n'
     import { useRouter, useRoute } from 'vue-router'
     import { useUserStore } from '@/stores/userData'
+    import { LOCALES } from '@/locales'
+
     // router
     const router = useRouter()
     const route = useRoute()
