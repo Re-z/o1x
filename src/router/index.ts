@@ -3,6 +3,7 @@ import { ROUTES } from './routesMap'
 // routes
 import ListView from '@/views/ListView.vue'
 import MainView from '@/views/MainView.vue'
+import TaC from '@/views/TaC.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,6 +17,11 @@ const router = createRouter({
             path: '/list',
             name: ROUTES.LIST_VIEW,
             component: ListView,
+        },
+        {
+            path: '/tac',
+            name: ROUTES.TAC_VIEW,
+            component: TaC,
         },
     ],
 })
