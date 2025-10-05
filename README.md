@@ -10,3 +10,4 @@
 - Use tailwind as much as it's possible
 - Use router only programmatically (via _router.push()_ instead of _router-link_)
 - Use i18n for the translations and don't forget to update both en.json and ua.json
+- Use absolute path for imports (_@/src/path_ instead of _./src/path_)

@@ -18,7 +18,7 @@
 </template>
 <script lang="ts" setup>
     // imports
-    import { BUTTON_TYPES } from './AppButton'
+    import { BUTTON_TYPES } from './Button'
     // props
     const props = defineProps({
         text: {

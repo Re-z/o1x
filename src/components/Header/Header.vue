@@ -53,8 +53,8 @@
 <script setup lang="ts">
     // imports
     import { ROUTES } from '@/router/routesMap'
-    import { BUTTON_TYPES } from '@/components/generic/AppButton/AppButton'
-    import AppButton from '@/components/generic/AppButton/AppButton.vue'
+    import { BUTTON_TYPES } from '@/components/generic/Button/Button'
+    import AppButton from '@/components/generic/Button/Button.vue'
     import { useI18n } from 'vue-i18n'
     import { useRouter, useRoute } from 'vue-router'
     import { useUserStore } from '@/stores/userData'
