@@ -1,10 +1,10 @@
 import { describe, test, expect } from 'vitest'
 import { mountComponent } from '@/__tests__/setup'
-import Header from '@/components/Header/Header.vue'
+import BusinessBanner from '@/components/BusinessBanner/BusinessBanner.vue'
 
-describe('Header.vue tests', () => {
+describe('BusinessBanner.vue tests', () => {
     test('renders correctly (snapshot)', () => {
-        const wrapper = mountComponent(Header)
+        const wrapper = mountComponent(BusinessBanner)
         expect(wrapper.html()).toMatchSnapshot()
     })
 })

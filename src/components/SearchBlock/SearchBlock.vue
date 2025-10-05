@@ -9,16 +9,16 @@
             placeholder="dropdown placeholder"
             :size="INPUT_SIZE.LG"
         />
-        <AppButton
+        <Button
             :type="BUTTON_TYPES.PRIMARY"
             text="Search"
         />
     </div>
 </template>
 <script setup lang="ts">
-    import { BUTTON_TYPES } from './generic/AppButton/AppButton'
-    import Dropdown from './generic/Dropdown.vue'
-    import { INPUT_SIZE } from './generic/Input/Input'
-    import Input from './generic/Input/Input.vue'
-    import AppButton from './generic/AppButton/AppButton.vue'
+    import { BUTTON_TYPES } from '@/components/generic/Button/Button'
+    import Dropdown from '@/components/generic/Dropdown/Dropdown.vue'
+    import { INPUT_SIZE } from '@/components/generic/Input/Input'
+    import Input from '@/components/generic/Input/Input.vue'
+    import Button from '@/components/generic/Button/Button.vue'
 </script>

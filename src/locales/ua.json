@@ -1,5 +1,8 @@
 {
     "myProfile": "Мій профіль",
     "createListing": "Додати оголошення",
-    "hello": "Привіт"
+    "hello": "Привіт",
+    "businessBannerTitle": "Маєш бізнес?",
+    "businessBannerText": "Переглянь актуальні пропозиції для бізнесу",
+    "details": "Деталі"
 }
