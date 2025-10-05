@@ -79,6 +79,7 @@
 </script>
 
 <style lang="scss" scoped>
+    //todo: delete this comment
     .logo {
         font-weight: bold;
         display: flex;
