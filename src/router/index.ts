@@ -19,7 +19,7 @@ const router = createRouter({
             component: ListView,
         },
         {
-            path: '/tac',
+            path: '/terms-and-conditions',
             name: ROUTES.TAC_VIEW,
             component: TaC,
         },
