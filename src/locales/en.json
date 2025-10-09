@@ -7,6 +7,8 @@
     "businessBannerText": "Click here to see the details",
     "details": "Details",
     "sections": "Sections",
-    "popularRequests": "Popular requests"
+    "popularRequests": "Popular requests",
+    "categories": "Categories",
+    "showAllinCategory": "Show all in category"
 
 }

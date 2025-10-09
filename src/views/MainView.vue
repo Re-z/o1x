@@ -1,10 +1,10 @@
 <template>
     <AppHeader />
     <SearchBlock />
+    <Categories />
     <BusinessBanner />
     <SocialsBlock />
     <SeoLinksBlock />
-    <p>this is the main page</p>
     <AppFooter />
 </template>
 <script lang="ts" setup>
@@ -13,7 +13,7 @@
     import SeoLinksBlock from '@/components/SeoLinksBlock/SeoLinksBlock.vue'
     import SearchBlock from '@/components/SearchBlock/SearchBlock.vue'
     import SocialsBlock from '@/components/SocialsBlock/SocialsBlock.vue'
-   
     import AppFooter from '@/components/Footer/Footer.vue'
+    import Categories from '@/components/Categories/Categories.vue'
 </script>
 <style lang="scss"></style>
