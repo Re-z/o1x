@@ -5,4 +5,5 @@ export const BUTTON_TYPES = {
 export const BUTTON_COLORS = {
     WHITE: '#fff',
     BLACK: '#000',
+    GREY: '#6a7282',
 }

@@ -7,11 +7,13 @@ import router from './router'
 import { createI18n } from 'vue-i18n'
 
 import { translations } from './locales'
+import { LOCALES } from '@/locales/index'
 
 const i18n = createI18n({
     legacy: false,
     globalInjection: true,
-    fallbackLocale: 'ua',
+    locale: LOCALES.EN,
+    fallbackLocale: LOCALES.UA,
     messages: translations as any,
 })
 
